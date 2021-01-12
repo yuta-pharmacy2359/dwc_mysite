@@ -167,7 +167,7 @@ main {
 }
 
 .profile-picture {
-  width: 50%;
+  width: 512px;
   display: flex;
   justify-content: center;
 }
@@ -179,7 +179,7 @@ main {
 }
 
 .profile-texts {
-  width: 50%;
+  width: 512px;
 }
 
 .texts-container {
@@ -243,4 +243,133 @@ footer {
 .footer-container p {
   color: #fafafa;
   font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+  .header-container {
+    height: 50px;
+    width: 90%;
+  }
+
+  .header-logo {
+    height: 50px;
+  }
+
+  .header-menus {
+    display: none;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    margin-left: auto;
+    margin-top: 5px;
+    position: relative;
+    border: 2px solid white;
+  }
+
+  .hamburger span {
+    display: block;
+    position: absolute;
+    width: 70%;
+    border-bottom: solid 4px white;
+    transition: 0.2s;
+    left: 6px;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 6px;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 16px;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 26px;
+  }
+
+  .main-visual {
+    background-image: url(img/code.png);
+  }
+
+  .main-visual-container,
+  .portfolio-container,
+  .feature-container,
+  .profile-container,
+  .contact-container,
+  .profile-container,
+  .profile-picture,
+  .profile-texts {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-container {
+    padding-bottom: 70px;
+  }
+
+  .pictures {
+    display: block;
+  }
+
+  .pf-picture {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .pf-picture:nth-child(odd) {
+    display: none;
+  }
+
+  .pf-picture:last-child,
+  .feature-content:last-child,
+  .profile-texts,
+  .contact-information {
+    margin: 0 auto;
+  }
+
+  .feature-contents,
+  .profile-contents,
+  .contact-contents {
+    display: block;
+  }
+
+  .feature-content {
+    margin: 0 auto 10px auto;
+  }
+
+  .profile-picture {
+    margin: 0 auto 20px auto;
+  }
+
+  .texts-title,
+  .texts-text,
+  .texts-container {
+    text-align: center;
+  }
+
+  .contact i {
+    margin-right: 8px;
+  }
+
+  .texts-text,
+  .feature-content-sentence {
+    word-wrap: break-word;
+  }
+
+  .feature-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .pf-picture {
+    width: 90%;
+    height: 90%;
+  }
 }
